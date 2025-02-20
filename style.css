@@ -1,0 +1,10 @@
+body { background: sandybrown; }
+table { border-color: black; text-align: center; }
+p { border-color: black; text-align: center; }
+.Logo_Header {display: flex; flex-direction: row}
+.Logo_Header h1 { text-align: center;}
+.Logo_Header img { position: relative; left: auto}
+
+.Character_Info {display: flex; flex-direction: column; align-items: center; justify-content: center; }
+
+.four_side_die {}
