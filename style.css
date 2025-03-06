@@ -1,10 +1,159 @@
-body { background: sandybrown; }
+body { background: sandybrown; font-family: Rum_font}
 table { border-color: black; text-align: center; }
+label { display: block; margin-bottom: 6px; font-size: 18px; font-weight: bold; }
+input { background-color: sandybrown; border-color: black; font-weight: bolder}
 p { border-color: black; text-align: center; }
 .Logo_Header {display: flex; flex-direction: row}
 .Logo_Header h1 { text-align: center;}
 .Logo_Header img { position: relative; left: auto}
 
-.Character_Info {display: flex; flex-direction: column; align-items: center; justify-content: center; }
+@font-face {
+    font-family: 'Rum_font';
+    src: url('fonts/TheRumIsGone-Wy1nG.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Character_Info,
+.Attributes_Section,
+.Edges_Hind_section {
+    flex: 1;
+    flex-direction: row;
+    min-width: 30%;
+    max-width: 30%;
+    border: 2px solid black;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.Character_Info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.Character_info label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.Character_Info input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid black;
+    color: black;
+}
+
+.Character_Basics {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 12px;
+    width: 96%;
+}
+
+.Attributes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+/* General button styling */
+.dice_drop_button {
+    background-color: black;
+    color: sandybrown;
+    border: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.4s ease;
+}
+
+.dice_drop_button:hover {
+    background-color: gold;
+}
+
+/* Dropdown container */
+.dice_dropdown {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-grow: 1;
+}
+
+/* Hidden dropdown content (will be inserted dynamically) */
+.dice_dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: gold;
+    min-width: 24px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dice_dropdown_content a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dice_dropdown_content a:hover {
+    background-color: goldenrod;
+}
+
+/* Show dropdown when active */
+.dice_dropdown.active .dice_dropdown_content {
+    display: block;
+}
+
+.selected_die {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: sandybrown;
+    color: black;
+    margin-left: 8px;
+}
+
+.roll_button {
+    background-color: sandybrown;
+    color: black;
+    border-color: gold;
+    padding: 2px 8px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 2px;
+    transition: background-color 0.4s ease;
+}
+
+.roll_button:hover {
+    background-color: crimson;
+}
+
+.roll_button_result {
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+.selected_die,
+.roll_button_result {
+    min-width: 40px;
+    text-align: center;
+    font-weight: bold;
+    background-color: sandybrown;
+    padding: 2px;
+    border-radius: 3px;
+}
 
 .four_side_die {}

@@ -12,88 +12,81 @@
     <h1 class="header">50 Fathoms Character Sheet</h1>
 </div>
 
-<div class="Character_Info">
-    <h3>Character Info</h3>
-    <label>Name:
-        <input type="text" name="name" placeholder="" required>
-    </label>
-    <label>Race:
-        <input type="text" name="race" placeholder="" required>
-    </label>
-    <label>Conviction:
-        <input type="text" name="conviction" placeholder="" required>
-    </label>
-    <label>Height:
-        <input type="text" name="height" placeholder="" required>
-    </label>
-    <label>Weight:
-        <input type="text" name="weight" placeholder="" required>
-    </label>
+<div class = "Character_Basics">
+    <div class="Character_Info">
+        <h3>Character Info</h3>
+        <label>Name:
+            <input type="text" name="name" placeholder="" required>
+        </label>
+        <label>Race:
+            <input type="text" name="race" placeholder="" required>
+        </label>
+        <label>Conviction:
+            <input type="text" name="conviction" placeholder="" required>
+        </label>
+        <label>Height:
+            <input type="text" name="height" placeholder="" required>
+        </label>
+        <label>Weight:
+            <input type="text" name="weight" placeholder="" required>
+        </label>
+    </div>
 
+    <div class="Attributes_Section">
+        <h2>Attributes</h2>
+        <div class = "Attributes">
+            <label>Agility:</label>
+                <div class = "dice_dropdown">
+                    <button class = "dice_drop_button"> Select Die </button>
+                    <span class = "selected_die"> </span>
+                    <button class = "roll_button"> Roll </button>
+                    <span class = "roll_button_result"></span>
+                </div>
+        </div>
+        <div class = "Attributes">
+            <label>Strength:</label>
+                <div class = "dice_dropdown">
+                    <button class = "dice_drop_button"> Select Die </button>
+                    <span class = "selected_die"> </span>
+                    <button class = "roll_button"> Roll </button>
+                    <span class = "roll_button_result"></span>
+                </div>
+        </div>
+        <div class = "Attributes">
+            <label>Smarts:</label>
+                <div class = "dice_dropdown">
+                    <button class = "dice_drop_button"> Select Die </button>
+                    <span class = "selected_die"> </span>
+                    <button class = "roll_button"> Roll </button>
+                    <span class = "roll_button_result"></span>
+                </div>
+        </div>
+        <div class = "Attributes">
+            <label>Spirit:</label>
+                <div class = "dice_dropdown">
+                    <button class = "dice_drop_button"> Select Die </button>
+                    <span class = "selected_die"> </span>
+                    <button class = "roll_button"> Roll </button>
+                    <span class = "roll_button_result"></span>
+                </div>
+        </div>
+        <div class = "Attributes">
+            <label>Vigor:</label>
+                <div class = "dice_dropdown">
+                    <button class = "dice_drop_button"> Select Die </button>
+                    <span class = "selected_die"> </span>
+                    <button class = "roll_button"> Roll </button>
+                    <span class = "roll_button_result"></span>
+                </div>
+        </div>
+    </div>
+
+    <div class = "Edges_Hind_section">
+        <h2>Edges & Hindrances</h2>
+    </div>
 </div>
-<div class="Gear_Powers"></div>
-<h2>Attributes</h2>
-    <label>Agility:
-        <dropdown class = "dice_dropdown">
-            <button class = "dice_drop_button">
 
-            </button>
-        </dropdown>
-    </label>
-    <label>Strength:
-    </label>
-    <label>Smarts:
-    </label>
-    <label>Spirit:
-    </label>
-    <label>Vigor:
-    </label>
-<!--
-    <table>
-        <tr>
-            <th>Agility</th>
-            <td>d4</td>
-            <td>d6</td>
-            <td>d8</td>
-            <td>d10</td>
-            <td>d12</td>
-        </tr>
-        <tr>
-            <th>Smarts</th>
-            <td>d4</td>
-            <td>d6</td>
-            <td>d8</td>
-            <td>d10</td>
-            <td>d12</td>
-        </tr>
-        <tr>
-            <th>Spirit</th>
-            <td>d4</td>
-            <td>d6</td>
-            <td>d8</td>
-            <td>d10</td>
-            <td>d12</td>
-        </tr>
-        <tr>
-            <th>Strength</th>
-            <td>d4</td>
-            <td>d6</td>
-            <td>d8</td>
-            <td>d10</td>
-            <td>d12</td>
-        </tr>
-        <tr>
-            <th>Vigor</th>
-            <td>d4</td>
-            <td>d6</td>
-            <td>d8</td>
-            <td>d10</td>
-            <td>d12</td>
-        </tr>
-    </table>
--->
 <h2>Equipment</h2>
-<h2>Edges & Hindrances</h2>
 <h2>Advancements</h2>
 <h2>Skills</h2>
 <h2>Powers</h2>
@@ -112,4 +105,5 @@
         </tr>
     </table>
 </body>
+<script src="index.js"></script>
 </html>
