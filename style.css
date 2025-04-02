@@ -18,12 +18,47 @@ p { border-color: black; text-align: center; }
 .Attributes_Section,
 .Edges_Hind_section {
     flex: 1;
-    flex-direction: row;
+    flex-direction: column;
     min-width: 30%;
     max-width: 30%;
     border: 2px solid black;
     padding: 12px;
     border-radius: 8px;
+}
+
+.edge_hind_row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.edge_hind_dropdown,
+.edge_hind_input {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid gold;
+    background-color: #2e2e2e;
+    color: white;
+}
+
+.remove_button {
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* recall # is used for id's */
+#add_edge_hind {
+    margin-top: 10px;
+    background-color: black;
+    color: gold;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .Character_Info {

@@ -64,3 +64,39 @@ document.querySelectorAll(".roll_button").forEach(button => {
         rollResultSpin.textContent = `Rolled: ${roll}`; // displays the result
     })
 })
+
+// Adding in the dynamic rows for Edges & Hindrances
+document.getElementById("add_edge_hind").addEventListener("click", function() {
+    let container = document.getElementById("edges_hind_list");
+
+    let row = document.createElement("div");
+    // classList is a read only. Getting attributes of the class elements
+    row.classList.add("edge_hind_row");
+
+    // This is choosing the first part of our dropdown part
+    let dropdown = document.createElement("select");
+    dropdown.classList.add("edge_hind_dropdown");
+    dropdown.innerHTML = `
+        <option value = "Edge">Edge</option>
+        <option value = "Hindrance">Hindrance</option>
+    `;
+
+    // This is the description for our edge/hind
+    let input = document.createElement("input");
+    input.classList.add("edge_hind_input");
+    input.type = "text";
+    input.placeholder = "Enter description";
+
+    // Now we do a remove button just in case we need to replace one
+    let removeBtn = document.createElement("button");
+    removeBtn.classList.add("remove_button");
+    removeBtn.textContent = "Remove";
+    removeBtn.addEventListener("click", function() {
+        row.remove();
+    });
+
+    row.appendChild(dropdown);
+    row.appendChild(input);
+    row.appendChild(removeBtn);
+    container.appendChild(row);
+});
